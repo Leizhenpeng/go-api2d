@@ -7,7 +7,11 @@
 
 本仓库基于 [openai/go-openai](https://github.com/sashabaranov/go-openai),因此兼容[OpenAI API](https://platform.openai.com/)所有接口
 
-同时针对[api2d](https://api2d.com/r/186763)的自定义参数进行了优化，使其更加易用。
+同时做出下面优化
+- 我们进行了针对[api2d](https://api2d.com/r/186763)自定义参数的优化，使其更加易于使用(如：内容审核服务)
+- 增加了流对话接口的token计数服务，方便您在服务端监控token消耗情况
+
+
 
 This library provides Go clients for . We support:
 

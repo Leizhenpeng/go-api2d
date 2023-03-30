@@ -43,6 +43,10 @@ type ChatCompletionRequest struct {
 	FrequencyPenalty float32                 `json:"frequency_penalty,omitempty"`
 	LogitBias        map[string]int          `json:"logit_bias,omitempty"`
 	User             string                  `json:"user,omitempty"`
+	// for api2d
+	SafeMode       bool `json:"safe_mode,omitempty" default:"false"`
+	Moderation     bool `json:"moderation,omitempty" default:"false"`
+	ModerationStop bool `json:"moderation_stop,omitempty" default:"false"`
 }
 
 type ChatCompletionChoice struct {
